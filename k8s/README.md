@@ -11,5 +11,8 @@ kubectl describe service custommvc-service
 
 minikube service custommvc-service
 
-minikube ip  
-curl http://192.168.99.100:NodePort
+## Test 
+
+curl $(minikube ip):${NodePort}
+
+e.g. curl http://192.168.99.100:30658
